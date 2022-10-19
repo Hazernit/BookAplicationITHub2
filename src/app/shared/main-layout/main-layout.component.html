@@ -1,0 +1,21 @@
+<nav class="navbar bg-dark">
+    <h2>BookAplication</h2>
+
+    <ul>
+        <li routerLinkActive="active">
+            <a href="#">Романы</a>
+        </li>
+        <li routerLinkActive="active">
+            <a href="#">Приключения</a>
+        </li>
+        <li routerLinkActive="active">
+            <a href="#">Драмы</a>
+        </li>
+        <li routerLinkActive="active">
+            <a [routerLink]="['/cart']">Корзина</a>
+        </li>
+    </ul>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
